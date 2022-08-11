@@ -1,0 +1,19 @@
+:root, html {
+  /* HEADER */
+  --header-section-height: calc(70px + var(--header-search-box-height));
+  --header-search-box-height: 0;
+  --header-background: rgba(0, 0, 0);
+  --header-text-color: rgba(255, 255, 255);
+  --header-border-color: rgba(38, 38, 38);
+
+  --mobile-menu-drawer-width: 60%;
+  --drawer-social-media-icons-height: 70px;
+
+  /* CONTAINER HEADER */
+  --product-card-items: 4;
+
+  /* IN THE PRESS CONTAINER */
+  --press-list-items: 5;
+
+  --product-reviews-card-items: 3;
+}

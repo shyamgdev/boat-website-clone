@@ -1,0 +1,167 @@
+@media screen and (max-width: 1101px) {
+  .product-reviews-collection {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-menu-btn[mobile] {
+    display: block;
+  }
+
+  #header-left {
+    justify-content: center;
+  }
+
+  #header-center {
+    display: none;
+  }
+
+  #header-right {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  :root {
+    --product-card-items: 3;
+    --product-reviews-card-items: 2;
+    --header-search-box-height: 60px;
+  }
+
+  .header-search-box {
+    display: none;
+  }
+
+  .header-search-box[mobile] {
+    display: block;
+  }
+
+  .blog-card-collection {
+    flex-direction: column;
+  }
+
+  .blog-card {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: flex-start;
+  }
+
+  .blog-card-img {
+    max-width: 40%;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    --mobile-menu-drawer-width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --product-card-items: 2;
+    --product-reviews-card-items: 1;
+    --mobile-menu-drawer-width: 70%;
+  }
+  
+  img[desktop] {
+    display: none;
+  }
+
+  img[mobile] {
+    display: block;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .flash-sale {
+    font-size: 14px;
+  }
+
+  .celebrities-container-wrapper {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .celebrity-img {
+    width: auto;
+    height: 370px;
+  }
+
+  .brand-promise-card {
+    flex-direction: column;
+  }
+
+  .brand-promise-card-text {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+
+  .footer-content {
+    margin: 0 1rem;
+    flex-direction: column;
+  }
+
+  .footer-content-item {
+    margin-right: 0;
+  }
+
+  .footer-linklist {
+    display: none;
+  }
+
+  .footer-content-item-links {
+    min-width: 93%;
+    max-width: 93%;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #999;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column-reverse;
+  }
+
+  .footer-download-box {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-download-box span {
+    margin: 0;
+  }
+
+  .footer-payment-box {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --mobile-menu-drawer-width: 100%;
+  }
+
+  .flash-sale {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  :root{
+    --product-card-items: 1;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .mobile-menu-drawer_close-btn {
+    padding: 7px 10px;
+  }
+}

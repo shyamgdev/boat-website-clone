@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ADD GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- ADD CSS LINKS -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaquery.css">
+  <!-- WEBSITE TITLE -->
+  <title>boat clone</title>
+  <!-- ADD ION ICONS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <section id="app">
+    <span id="overlay"></span>
+    <!-- HEADER SECTION -->
+    <section class="header-section">
+      <header class="header flex-column">
+        <div class="header-wrapper flex">
+          <!-- TOGGLE BUTTON FOR MOBILE -->
+          <div class="header-menu-btn" mobile>
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <!-- MOBILE MENU DRAWER -->
+          
+          <div class="mobile-menu-drawer">
+            <div class="mobile-menu-drawer_close-btn flex">
+              <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <div class="drawer-content flex">
+              <div class="drawer-content-wrapper">
+              <ul class="flex-row" class="drawer-content-items">
+                <li class="active">
+                  <a href="#">Categories</a>
+                </li>
+                <li>
+                  <a href="#">Menu</a>
+                </li>
+              </ul>
+              <div class="drawer-content-item">
+                <ul class="flex-column active">
+                  <li>
+                    <a href="#">
+                      <img src="./img/nav-item1.webp" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/nav-item1.webp" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/nav-item1.webp" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/nav-item1.webp" alt="">
+                    </a>
+                  </li>
+                </ul>
+                <ul class="flex-column ">
+                  <li>
+                    <a href="#">Track Your Order</a>
+                  </li>
+                  <li>
+                    <a href="#">Daily Deals</a>
+                  </li>
+                  <li>
+                    <a href="#">More</a>
+                  </li>
+                  <span>
+                    <li>
+                      <a href="">Gifting</a>
+                    </li>
+                    <li>
+                      <a href="">Offer Zone</a>
+                    </li>
+                    <li>
+                      <a href="">Do What Floats Your boAt</a>
+                    </li>
+                    <li>
+                      <a href="">Meet the boAtheads</a>
+                    </li>
+                    <li>
+                      <a href="">Corporate Orders</a>
+                    </li>
+                    <li>
+                      <a href="">Earn Rs 100</a>
+                    </li>
+                    <li>
+                      <a href="">Careers</a>
+                    </li>
+                    <li>
+                      <a href="">SocialResponsibility</a>
+                    </li>
+                  </span>
+
+                  <li>
+                    <a href="#">Account</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="drawer-social-media-icons flex-row">
+                <div class="drawer-social-media-icon flex">
+                  <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </div>
+                <div class="drawer-social-media-icon flex">
+                  <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </div>
+                <div class="drawer-social-media-icon flex">
+                  <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </div>
+                <div class="drawer-social-media-icon flex">
+                  <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </div>
+                <div class="drawer-social-media-icon flex">
+                  <a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- FOR DESKTOP -->
+          <!-- HEADER LEFT SIDE / LOGO SIDE -->
+          <div id="header-left" class="flex">
+            <div class="header-logo">
+              <a class="header-logo-link" href="#"><img src="./img/logo.png" alt=""></a>
+            </div>
+          </div>
+          <!-- HEADER CENTER / NAVBAR -->
+          <div id="header-center" class="flex">
+            <nav class="navbar">
+              <ul class="nav-items flex">
+                <li class="nav-item have-dropdown-items flex">
+                  <span>shop</span>
+                  <div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                  <ul class="nav-dropdown-content">
+                    <!-- DROPDOWN ITEMS -->
+                    <li class="nav-dropdown-content-item">
+                      <!-- <a href="#"><img src="./img/banner.png" alt=""></a> -->
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item flex"><span>daily deals</span></li>
+                <li class="nav-item flex"><span>offer zone</span></li>
+                <li class="nav-item have-dropdown-items flex">
+                  <span>more</span>
+                  <div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                  <ul class="nav-dropdown-content">
+                    <!-- DROPDOWN ITEMS -->
+                    <li class="nav-dropdown-content-item">
+                      <!-- <a href="#"><img src="./img/banner.png" alt=""></a> -->
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- HEADER RIGHT SIDE -->
+          <div id="header-right" class="flex">
+            <div class="header-search-box flex">
+              <input type="text" placeholder="Search">
+            </div>
+            <div class="header-right-btn">
+              <ion-icon name="person"></ion-icon>
+            </div>
+            <div class="header-right-btn">
+              <a href="#">
+                <ion-icon name="gift"></ion-icon>
+              </a>
+            </div>
+            <div class="header-right-btn header-cart">
+              <a href="#">
+                <ion-icon name="cart"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOR MOBILE -->
+        <div class="header-search-box flex" mobile>
+          <input type="text" placeholder="Search">
+        </div>
+      </header>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- BANNER SECTION -->
+      <section class="banner-section">
+        <div class="banner flex-row">
+          <img class="banner-img" src="./img/banner.png" alt="" desktop>
+          <img class="banner-img" src="./img/mob banner.gif" alt="" mobile>
+          <img class="banner-img" src="./img/mob banner2.webp" alt="" mobile>
+          <img class="banner-img" src="./img/mob banner3.webp" alt="" mobile>
+        </div>
+      </section>
+
+      <!-- MAIN SECTION -->
+      <section class="main-section flex">
+        <div class="main-section-wrapper">
+          <!-- CONTAINERS -->
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#">
+                  <h3 class="heading text">biggest launches. Dopest products</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product1.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product2.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <!-- <div class="product-card-price">&#8377 1299</div> -->
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product3.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <!-- <div class="product-card-price">&#8377 1299</div> -->
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product4.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <!-- <div class="product-card-price">&#8377 1299</div> -->
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">deals of the day</h3>
+                  <p class="flash-sale flex-row">
+                    <span class="thunder">
+                      <img src="./img/thunder.webp" alt="">
+                    </span>
+                    <span style="font-weight: 600;">&nbsp;Daily Deals</span>
+                    <span class="flash-sale-timer">
+                      <span class="flash-sale-timer-title">Ending In:</span>
+                      <span id="flash-sale-timer-display"></span>
+                    </span>
+                  </p>
+                  <span>view all ></span>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product5.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product6.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product7.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product8.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">best sellers</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product9.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product10.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product11.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product12.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">smart watches</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product13.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product14.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product15.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product16.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">trending wireless</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product17.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product18.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product19.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product20.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">top earbuds</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product21.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product22.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product23.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product24.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">trending wired</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product25.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product26.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product27.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product28.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">trending headphones</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product29.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product30.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product31.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product32.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">grooming</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product33.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product34.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product35.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product36.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">boAt | superheroes</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product37.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product38.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product39.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product40.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <a href="#" class="container-header-link flex-column">
+                  <h3 class="heading text">home audio</h3>
+                </a>
+              </div>
+            </div>
+            <div class="collection flex">
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product41.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product42.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product43.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+              <!-- PRODUCT CARD -->
+              <div class="product-card">
+                <span class="saved-price flex-row">
+                  <img src="./img/thunder.webp"
+                    alt=""> 67%
+                </span>
+                <div class="product-card-img">
+                  <a href="#"><img src="./img/product44.webp" alt=""></a>
+                </div>
+                <div class="product-card-info">
+                  <div class="product-card-title">
+                    <a href="#">boAt Airdopes 121 PRO</a>
+                  </div>
+                  <div style="display: flex; flex-direction: row; line-height: 30px;">
+                    <span class="product-card-price">&#8377 1299</span>
+                    <span class="product-card-MRP">&#8377<s>2990</s></span>
+                  </div>
+                  <div class="product-card-saved-price">you save: &#8377 1691(57%)</div>
+                  <button class="product-card-btn">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BLOG CONTAINER -->
+          <div class="blog-container">
+            <div class="blog-container-wrapper">
+              <div class="container-header">
+                <div class="container-header-text flex">
+                  <h3 class="heading text">boAt blogs</h3>
+                </div>
+              </div>
+              <div class="collection blog-card-collection flex">
+                <!-- BLOG CARD -->
+                <div class="blog-card flex">
+                  <div class="blog-card-img">
+                    <a href="#"><img src="./img/blog1.webp" alt=""></a>
+                  </div>
+                  <div class="blog-card-title">
+                    <h3>
+                      <a href="#">Earphones Buying Guide - Everything You Need To Know</a>
+                    </h3>
+                  </div>
+                </div>
+                <!-- BLOG CARD -->
+                <div class="blog-card flex">
+                  <div class="blog-card-img">
+                    <a href="#"><img src="./img/blog2.webp" alt=""></a>
+                  </div>
+                  <div class="blog-card-title">
+                    <h3>
+                      <a href="#">The Ultimate Smartwatch Guide - Get The World On Your Wrist</a>
+                    </h3>
+                  </div>
+                </div>
+                <!-- BLOG CARD -->
+                <div class="blog-card flex">
+                  <div class="blog-card-img">
+                    <a href="#"><img src="./img/blog3.webp" alt=""></a>
+                  </div>
+                  <div class="blog-card-title">
+                    <h3>
+                      <a href="#">Launching boAt Airdopes 121 PRO – Experience The Rush Of More As Our
+                        #BestJustGotBetter</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- EXPLORE BLOG BUTTON -->
+              <div class="explore-blogs-btn">
+                <a href="#">
+                  <button>EXPLORE BLOGS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CELEBRITIES CONTAINER -->
+          <div class="celebrities-container">
+            <div class="celebrities-container-wrapper flex">
+              <div class="celebrity-img">
+                <img src="./img/celeb1.webp" alt="">
+              </div>
+              <div class="celebrities-container-wrapper_info">
+                <h2 class="celebrities-container-wrapper-heading">Meet the bo<span class="color-red">A</span>t heads
+                  <hr>
+                </h2>
+                <h3 class="celebrity-name color-red">K L Rahul</h3>
+                <p class="catchy-line color-white">Fierce. Flamboyant. Fearless.</p>
+                <p class="description">When you hear the crowd roar, be assured that it’s KL Rahul making his way to
+                  the field. Our hardcore boAthead, KL Rahul, hits it with his performance as well as his fashion
+                  statement. On or off field, Rahul always makes #MoveOfTheChampions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT REVIEWS CONTAINER -->
+          <div class="product-reviews-container">
+            <div class="product-reviews">
+              <div class="container-header">
+                <div class="container-header-text flex">
+                  <h3 class="heading text">What They Say About Us:</h3>
+                </div>
+              </div>
+              <div class="product-reviews-collection collection flex-row">
+                <!-- PRODUCT REVIEWS CARD -->
+                <div class="product-reviews-card">
+                  <div class="product-reviews-card-img">
+                    <a href="#"><img src="./img/review1.webp" alt=""></a>
+                  </div>
+                  <div class="product-reviews-card-info flex-column">
+                    <div class="product-reviews-card-info-text">"It is value for money, best sound especially bass"
+                    </div>
+                    <button class="product-reviews-card-info-btn color-red">SHOP NOW</button>
+                  </div>
+                </div>
+                <!-- PRODUCT REVIEWS CARD -->
+                <div class="product-reviews-card">
+                  <div class="product-reviews-card-img">
+                    <a href="#"><img src="./img/review2.webp" alt=""></a>
+                  </div>
+                  <div class="product-reviews-card-info flex-column">
+                    <div class="product-reviews-card-info-text">"The battery backup is something unbelievable"</div>
+                    <button class="product-reviews-card-info-btn color-red">SHOP NOW</button>
+                  </div>
+                </div>
+                <!-- PRODUCT REVIEWS CARD -->
+                <div class="product-reviews-card">
+                  <div class="product-reviews-card-img">
+                    <a href="#"><img src="./img/review3.webp" alt=""></a>
+                  </div>
+                  <div class="product-reviews-card-info flex-column">
+                    <div class="product-reviews-card-info-text">"Amazing product great sound quality and the mic
+                      performance is also awesome"</div>
+                    <button class="product-reviews-card-info-btn color-red">SHOP NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTAINER (IN THE PRESS) -->
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <h3>In the Press</h3>
+              </div>
+            </div>
+            <div class="quote flex-column">
+              <span>How India's boAt became the fifth largest wearable brand in the world</span>
+            </div>
+            <div class="press-list flex-row">
+              <div class="press-list-img">
+                <img src="./img/press-list1.webp" alt="">
+              </div>
+              <div class="press-list-img">
+                <img src="./img/press-list2.webp" alt="">
+              </div>
+              <div class="press-list-img">
+                <img src="./img/press-list3.webp" alt="">
+              </div>
+              <div class="press-list-img">
+                <img src="./img/press-list4.webp" alt="">
+              </div>
+              <div class="press-list-img">
+                <img src="./img/press-list5.webp" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- TRUST CONTAINER -->
+          <div class="container">
+            <div class="container-img">
+              <img src="./img/trust.webp" alt="">
+            </div>
+          </div>
+
+          <!-- BRAND PROMISE CONTAINER -->
+          <div class="container">
+            <div class="container-header">
+              <div class="container-header-text flex">
+                <h3 class="heading text">Brand promise</h3>
+              </div>
+            </div>
+            <div class="collection brand-promise-collection flex-row">
+              <div class="brand-promise-card flex">
+                <div class="brand-promise-card-img">
+                  <img src="./img/shipping.webp" alt="">
+                </div>
+                <div class="brand-promise-card-text">Free Shipping</div>
+              </div>
+              <div class="brand-promise-card flex-row">
+                <div class="brand-promise-card-img">
+                  <img src="./img/deals.webp" alt="">
+                </div>
+                <div class="brand-promise-card-text">Exclusive Deals</div>
+              </div>
+              <div class="brand-promise-card flex-row">
+                <div class="brand-promise-card-img">
+                  <img src="./img/secure.webp" alt="">
+                </div>
+                <div class="brand-promise-card-text">Secure Checkout</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex-column">
+      <!-- FOOTER TOP -->
+      <div class="brand-text">
+        <p style="cursor: text;">India's fastest growing audio & wearables brand. The most incredible range of wireless
+          earphones, earbuds,
+          headphones, smart watches, and home audio. From workouts to adventures, boAt will get you sailing!</p>
+      </div>
+      <!-- FOOTER MIDDLE -->
+      <div class="container">
+        <div class="footer-content flex">
+          <div class="footer-content-item">
+            <div style="width: 100px; cursor: pointer;" class="footer-brand-logo">
+              <img src="./img/logo.png" alt="">
+            </div>
+            <div style="margin: 1rem 0; align-items: flex-start; font-size: 13px; opacity: 0.8"
+              class="footer-subscribe-form flex-column">
+              <span style="margin-bottom: 1rem; opacity: 0.8; cursor: text;">Subscribe to email alerts. We promise not
+                to spam your inbox.</span>
+              <div class="footer-subscribe-form-input">
+                <input type="text" placeholder="Email Address*">
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+            <div class="footer-social-media-icons flex-row">
+              <div class="footer-social-media-icon flex">
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </div>
+              <div class="footer-social-media-icon flex">
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </div>
+              <div class="footer-social-media-icon flex">
+                <a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </div>
+              <div class="footer-social-media-icon flex">
+                <a href="#">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+              <div class="footer-social-media-icon flex">
+                <a href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content-item-links">
+            <div class="footer-content-item-links-title">SHOP+</div>
+            <ul class="footer-linklist flex-column">
+              <li class="footer-linklist-item">
+                <a href="#">True wireless Earbuds</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Wireless Headphones
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Wireless Headphones
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Wireless Speakers
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Home Audio
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Mobile Accessories
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Smart Watches
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">TRebel
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Misfit
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Gift Card
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Rock In India
+                </a>
+              <li class="footer-linklist-item">
+                <a href="#">Wireless Headphones
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content-item-links">
+            <div class="footer-content-item-links-title">HELP+</div>
+            <ul class="footer-linklist flex-column">
+              <li class="footer-linklist-item">
+                <a href="#">Track Your Order</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Warranty & Support</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Return Policy</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Service Centers</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Bulk Orders</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Fax</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Why By Direct</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content-item-links">
+            <div class="footer-content-item-links-title">COMPANY+</div>
+            <ul class="footer-linklist flex-column">
+              <li class="footer-linklist-item">
+                <a href="#">About boAt</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">News</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Read our Blog</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Careers</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Security</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Terms of Services</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Investor Relations</a>
+              </li>
+              <li class="footer-linklist-item">
+                <a href="#">Social Responsibility</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom flex-column">
+        <div class="footer-bottom-row flex">
+          <div class="footer-payment-box">
+            <img src="./img/payments.webp" alt="">
+          </div>
+          <div class="footer-download-box flex-row">
+            <span>DOWNLOAD THE APP</span>
+            <div class="flex-row">
+              <a href="#" style="margin-right: 20px"><img src="./img/google-play.webp" alt=""></a>
+              <a href="#"><img src="./img/app-store.webp" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div style="font-size: 12px; cursor: text;" class="copyright-text">
+          &#169; 2022 <a style="font-weight: 600;" href="https://github.com/shyamgdev">shyamgdev</a>. All Rights
+          Reserved
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
